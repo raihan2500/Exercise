@@ -15,7 +15,7 @@ class ControllingHighwayLightTest {
 
     @Test
     void checkLampstatePerson2(){
-        assertEquals(1,person1.getLampstate());
+        assertEquals(1,person2.getLampstate());
     }
 
     @Test
@@ -27,7 +27,7 @@ class ControllingHighwayLightTest {
     @Test
     void checkLampstatePerson2AfterToggling(){
         person2.toggleSecondSwitch();
-        assertEquals(0,person1.getLampstate());
+        assertEquals(0,person2.getLampstate());
     }
 
     @Test
