@@ -10,7 +10,7 @@ class BankAccountTest {
     void checkMomBalance(){
         assertEquals(1000, momSavings.getBalance());
     }
-
+    @Test
     void checkMomBalanceAfterAddingInterest(){
         momSavings.addInterest(10);
         assertEquals(1100, momSavings.getBalance());
